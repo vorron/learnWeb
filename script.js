@@ -1,7 +1,7 @@
 let addMessage = document.querySelector(".message");
 let addButton = document.querySelector(".add");
 let todo = document.querySelector(".todo");
-let delElement = document.querySelector(".delete");
+let delElementAll = document.querySelector(".delete");
 // let editElement = document.querySelector(".edit");
 
 let todoList = []; // массив данных списка
@@ -35,7 +35,7 @@ function displayMessages() {
   });
 }
 
-delElement.addEventListener("click", function () {
+delElementAll.addEventListener("click", function () {
   // Удаление данных из списка
   todoList.forEach(function (item) {
     todoList.splice(item);
