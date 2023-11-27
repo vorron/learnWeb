@@ -43,6 +43,7 @@ input[type="text"] {
   padding: 10px;
   background-color: azure;
   border-radius: 10px;
+  text-align: center;
 }
 
 button {
@@ -106,4 +107,12 @@ input[type="checkbox"]:checked + label:before {
   -ms-transform: rotate(45deg);
   border-radius: 0;
   margin: 0 15px 5px 5px;
+}
+.result {
+  text-align: center;
+  margin-top: 10px;
+  width: 380px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(42, 94, 162);
 }
