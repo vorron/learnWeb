@@ -1,10 +1,12 @@
 let addMessage = document.querySelector(".message");
 let addButton = document.querySelector(".add");
 let todo = document.querySelector(".todo");
-let delElementAll = document.querySelector(".delete");
+let delAllButton = document.querySelector(".delete");
 // let editElement = document.querySelector(".edit");
+let allTasks = document.querySelector(".result");
 
 let todoList = []; // массив данных списка
+
 
 addButton.addEventListener("click", function () {
   // Добавление задач в список по кнопке
@@ -35,10 +37,25 @@ function displayMessages() {
   });
 }
 
-delElementAll.addEventListener("click", function () {
-  // Удаление данных из списка
-  todoList.forEach(function (item) {
-    todoList.splice(item);
-  });
+// старый код удаления задач
+// delElementAll.addEventListener("click", function () {
+//   todoList.forEach(function (item) {
+//     todoList.splice(item);
+//   });
+//   displayMessages();
+// });
+
+
+// 
+function allTask() { 
+  let count = todoList.length;
+  allTasks.textContent = `Всего задач: ${count}`;
+
+}
+
+// Удаление задач
+delAllButton.addEventListener("click", function () {
+  todoList.splice(0, todoList.length);
+  allTasks.innerHTML = "Задач нет";
   displayMessages();
 });
