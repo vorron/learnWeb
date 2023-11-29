@@ -90,7 +90,14 @@ let todoList = [  {
     important: true,
     assignmentDate: "28.11.23",
     performDate: "",
-  },
+  },    
+    {
+    todo: "Вывести список задач в отдельный модуль, импортировать его из основного скрипта",
+    checked: false,
+    important:true ,
+    assignmentDate: "28.11.23",
+    performDate: "",
+  }
 ]; 
 
 
