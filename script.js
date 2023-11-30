@@ -83,7 +83,6 @@ let todoList = [  {
     assignmentDate: "28.11.23",
     performDate: "",
   },
-  ,
   {
     todo: "Реализовать вывод стат.отчёта, сколько задач в день закрывалось за отчетный период",
     checked: false,
