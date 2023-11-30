@@ -97,7 +97,22 @@ let todoList = [  {
     important:true ,
     assignmentDate: "28.11.23",
     performDate: "",
+  },
+                {
+    todo: "Добавить параметр 'Рег. номер задачи', сделать её автозаполняемым, обеспечить его отображение",
+    checked: false,
+    important:true ,
+    assignmentDate: "29.11.23",
+    performDate: "",
+  },
+{
+    todo: "Спрофилировать сайт для работы на десктопе: сделать что бы высота списка умещалась на экране, при превышении появлялась прокрутка",
+    checked: false,
+    important: false ,
+    assignmentDate: "29.11.23",
+    performDate: "",
   }
+
 ]; 
 
 displayMessages();
