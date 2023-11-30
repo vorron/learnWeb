@@ -71,7 +71,7 @@ let todoList = [  {
   },
   {
     todo: "Обеспечить отображение задач при запуске сайта",
-    checked: false,
+    checked: true,
     important: false,
     assignmentDate: "28.11.23",
     performDate: "",
