@@ -1,7 +1,7 @@
-let addMessage = document.querySelector(".message");
-let addButton = document.querySelector(".add");
-let todo = document.querySelector(".todo");
-let delAllButton = document.querySelector(".delete");
+const addMessage = document.querySelector(".message");
+const addButton = document.querySelector(".add");
+const todo = document.querySelector(".todo");
+const delAllButton = document.querySelector(".delete");
 // let editElement = document.querySelector(".edit");
 let allTasks = document.querySelector(".result");
 
@@ -123,10 +123,11 @@ function displayMessages() {
     displayMessage += `  
     <li>
      <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
-     <label for="item_${i}">${item.todo}</label>
+     <label for="item_${i}" class='${item.important ? "important" : ""}`>${item.todo}</label>
     </li>
     `;
     todo.innerHTML = displayMessage;
+    allTask();
   });
 }
 
