@@ -128,6 +128,7 @@ function displayMessages() {
     `;
     todo.innerHTML = displayMessage;
   });
+    allTask();
 }
 
 // старый код удаления задач
