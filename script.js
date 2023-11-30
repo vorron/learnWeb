@@ -100,7 +100,7 @@ let todoList = [  {
   }
 ]; 
 
-
+displayMessages();
 addButton.addEventListener("click", function () {
   // Добавление задач в список по кнопке
   if (!addMessage.value) return alert("Введите текст!!!"); // Ограничение пустого ввода
