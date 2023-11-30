@@ -123,11 +123,10 @@ function displayMessages() {
     displayMessage += `  
     <li>
      <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
-     <label for="item_${i}" class='${item.important ? "important" : ""}`>${item.todo}</label>
+     <label for="item_${i}" class='${item.important ? "important" : ""}'>${item.todo}</label>
     </li>
     `;
     todo.innerHTML = displayMessage;
-    allTask();
   });
 }
 
