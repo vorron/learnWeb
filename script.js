@@ -131,20 +131,23 @@ addButton.addEventListener("click", function () {
 
 function displayElements() {
   let displayMessage = "";
-  if (todoList.length === 0) todo.innerHTML = "";
   todoList.forEach(function (item, i) {
-    // Формирование списка
-    displayMessage += `  
+    displayMessage += `
     <li>
-         <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
-         <label for="item_${i}" class='${item.important ? "important" : ""}'>${item.todo}
-         </label>
+      <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
+      <label for="item_${i}" class='${item.important ? "important" : ""}'>${
+      item.todo
+    }
+    <button class="edit">edit</button>
+  <button class="delete-element">X
+  </button>
+      </label>
     </li>
     `;
-        todo.innerHTML = displayMessage;
   });
-    let count = todoList.length;
-    allTasks.textContent = `Всего задач: ${count}`;
+  todo.innerHTML = displayMessage;
+  let count = todoList.length;
+  allTasks.textContent = `Всего задач: ${count}`;
 }
 
 
