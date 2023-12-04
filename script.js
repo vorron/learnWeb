@@ -114,7 +114,7 @@ let todoList = [  {
 
 ]; 
 
-displayMessages();
+displayElements();
 addButton.addEventListener("click", function () {
   // Добавление задач в список по кнопке
   if (!addMessage.value) return alert("Введите текст!!!"); // Ограничение пустого ввода
@@ -129,7 +129,7 @@ addButton.addEventListener("click", function () {
   addMessage.value = "";
 });
 
-function displayMessages() {
+function displayElements() {
   let displayMessage = "";
   if (todoList.length === 0) todo.innerHTML = "";
   todoList.forEach(function (item, i) {
@@ -155,7 +155,7 @@ todo.addEventListener("contextmenu", function (event) {
   todoList.forEach(function (item) {
     if (item.todo === event.target.innerHTML) {
       item.important = !item.important;
-      displayMessages();
+      displayElements();
     }
   });
 });
@@ -164,5 +164,5 @@ todo.addEventListener("contextmenu", function (event) {
 delAllButton.addEventListener("click", function () {
   todoList.splice(0, todoList.length);
   allTasks.innerHTML = "Задач нет";
-  displayMessages();
+  displayElements();
 });
