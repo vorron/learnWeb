@@ -136,22 +136,18 @@ function displayMessages() {
     // Формирование списка
     displayMessage += `  
     <li>
-     <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
-     <label for="item_${i}" class='${item.important ? "important" : ""}'>${item.todo}</label>
+         <input type="checkbox" id="item_${i}" ${item.checked ? "checked" : ""}>
+         <label for="item_${i}" class='${item.important ? "important" : ""}'>${item.todo}
+         </label>
     </li>
     `;
-    todo.innerHTML = displayMessage;
+        todo.innerHTML = displayMessage;
   });
-    allTask();
+    let count = todoList.length;
+    allTasks.textContent = `Всего задач: ${count}`;
 }
 
-// старый код удаления задач
-// delElementAll.addEventListener("click", function () {
-//   todoList.forEach(function (item) {
-//     todoList.splice(item);
-//   });
-//   displayMessages();
-// });
+
 
 // При нажатии на элемент правой кнопкой мышки, помечается Важным
 todo.addEventListener("contextmenu", function (event) {
@@ -163,13 +159,6 @@ todo.addEventListener("contextmenu", function (event) {
     }
   });
 });
-
-// 
-function allTask() { 
-  let count = todoList.length;
-  allTasks.textContent = `Всего задач: ${count}`;
-
-}
 
 // Удаление задач
 delAllButton.addEventListener("click", function () {
