@@ -10,13 +10,13 @@ body {
   padding-top: 50px;
 }
 
- .important {
+.important {
   font-weight: bold;
   color: #c55f61;
-} 
+}
 
 .todo_list {
-  max-width: 400px;
+  max-width: 600px;
   display: block;
   margin: 0 auto 40px;
   background-color: #3f1ba3;
@@ -41,9 +41,10 @@ h1 {
 input[type="text"] {
   width: 376px;
   padding: 10px;
-  background-color: azure;
+  background-color: rgb(165, 228, 228);
   border-radius: 10px;
   text-align: center;
+  height: 45px;
 }
 
 button {
@@ -52,7 +53,9 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: azure;
+  background-color: rgb(77, 178, 104);
+  -webkit-box-shadow: 0 5px 14px 0 #078366;
+  box-shadow: 0 5px 14px 0 #078358;
 }
 
 .todo {
@@ -109,10 +112,43 @@ input[type="checkbox"]:checked + label:before {
   margin: 0 15px 5px 5px;
 }
 .result {
+  width: 400px;
   text-align: center;
   margin-top: 10px;
-  width: 380px;
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(42, 94, 162);
+  margin-left: 15%;
+}
+
+.delete {
+  background-color: #84191b;
+  -webkit-box-shadow: 0 5px 14px 0 #83076e;
+  box-shadow: 0 5px 14px 0 #83076e;
+}
+
+.delete-element {
+  flex: content;
+  margin-top: 10px;
+  width: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(183, 48, 44);
+  -webkit-box-shadow: 0 5px 14px 0 #708307;
+  box-shadow: 0 5px 14px 0 #708307;
+  text-align: center;
+}
+
+.edit {
+  flex: content;
+  margin-top: 10px;
+  width: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(85, 225, 123);
+  -webkit-box-shadow: 0 5px 14px 0 #078366;
+  box-shadow: 0 5px 14px 0 #078358;
+  text-align: center;
 }
